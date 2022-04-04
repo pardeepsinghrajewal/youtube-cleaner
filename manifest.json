@@ -1,0 +1,16 @@
+{
+  "name" : "youtubeCleaner",
+  "version" : "0.0.1",
+  "manifest_version" : 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "youTubeCleaner"
+    },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["js/content.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
